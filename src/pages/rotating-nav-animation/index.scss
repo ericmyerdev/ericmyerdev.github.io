@@ -1,0 +1,136 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  background-color: rgb(41, 41, 41);
+}
+
+.contentContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100vw;
+  overflow-x: hidden;
+  transform-origin: top left;
+  transition: transform 500ms;
+  background-color: antiquewhite;
+  .content {
+    width: 80%;
+    * {
+      width: 100%;
+    }
+  }
+}
+
+.contentContainer.active {
+  transform: rotate(-20deg);
+}
+
+.navToggle {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex: 0.5;
+  position: fixed;
+  width: 24px;
+  border-radius: 8px;
+  background-color: rgb(41, 41, 41);
+  padding: 8px;
+  top: 16px;
+  left: 8px;
+  border: 1px solid rgb(96, 96, 96);
+  div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(41, 41, 41);
+    padding: 16px 8px;
+    width: 50%;
+    box-sizing: content-box;
+    background-color: rgb(208, 191, 35);
+    position: relative;
+    &::after {
+      content: "";
+      position: absolute;
+      height: 100%;
+      width: 100%;
+      border: 1px solid rgb(96, 96, 96);
+      background-color: rgb(41, 41, 41);
+      opacity: 100%;
+      transition: height 200ms ease-in-out;
+    }
+  }
+  .open {
+    border-radius: 4px 4px 0 0;
+    &::after {
+      height: 0;
+      opacity: 0;
+    }
+  }
+  .close {
+    border-radius: 0 0 4px 4px;
+    &::after {
+      border-radius: 0 0 4px 4px;
+      top: 0;
+    }
+  }
+}
+
+.navToggle.active {
+  .open::after {
+    height: 100%;
+    opacity: 100%;
+    border-radius: 4px 4px 0 0;
+    bottom: 0;
+  }
+  .close::after {
+    height: 0;
+    opacity: 0;
+  }
+}
+
+.navContainer {
+  display: flex;
+  flex: 0.5;
+  position: fixed;
+  bottom: 64px;
+  left: 32px;
+  transform: translateX(-400px);
+  transition: transform ease-out 500ms;
+  ul {
+    display: flex;
+    gap: 24px;
+    flex-direction: column;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+}
+
+.navButton {
+  display: flex;
+  gap: 16px;
+  a {
+    color: rgb(208, 191, 35);
+    text-decoration: none;
+    font-size: 24px;
+    gap: 16px;
+    i {
+      margin-right: 16px;
+    }
+  }
+}
+
+.navContainer.active {
+  transform: translateX(0px);
+  #about {
+    margin-left: 16px;
+  }
+  #contact {
+    margin-left: 32px;
+  }
+}

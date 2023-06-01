@@ -1,0 +1,38 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgb(83, 83, 218);
+}
+
+.buttons {
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
+}
+
+button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 32px;
+  padding: 8px;
+  background-color: rgb(31, 31, 237);
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  &:hover {
+    background-color: rgb(50, 50, 228);
+  }
+}
+
+.stopBtn {
+  background-color: rgb(218, 66, 66);
+  &:hover {
+    background-color: rgb(216, 87, 87);
+  }
+}

@@ -1,0 +1,38 @@
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  height: 100vh;
+}
+
+.search {
+  display: flex;
+  height: 4vh;
+  border: 1px solid black;
+}
+
+.search.active {
+  .searchInput {
+    display: block;
+    width: 20vw;
+    padding: 8px;
+  }
+}
+
+.searchInput,
+.searchButton {
+  border: none;
+  background-color: white;
+  padding: 8px;
+}
+
+.searchInput {
+  width: 0;
+  padding: 0;
+  transition: width 300ms ease-out;
+}
+
+.searchButton {
+  width: 4vh;
+}

@@ -1,0 +1,11 @@
+@import url("https://fonts.googleapis.com/css2?family=Tilt+Neon&display=swap");
+
+.container {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	gap: 0.5svw;
+	font-size: 2svw;
+	font-family: "Tilt Neon", sans-serif;
+}

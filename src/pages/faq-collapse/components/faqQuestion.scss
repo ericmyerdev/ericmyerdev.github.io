@@ -1,0 +1,41 @@
+.faq-quest {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	gap: 16px;
+	font-size: 4vw;
+	padding: 16px;
+	background-color: rgb(218, 218, 218);
+	border: rgb(169, 169, 169) solid 1px;
+	border-radius: 8px;
+	box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.255);
+	transition: all 100ms ease-out;
+	width: 80%;
+	&:hover {
+		cursor: pointer;
+	}
+	.question {
+		color: rgb(37, 37, 37);
+		width: 80%;
+	}
+	.answer {
+		color: rgb(63, 63, 63);
+		transition: opacity 300ms ease 100ms;
+	}
+	.icon {
+		position: absolute;
+		top: 16px;
+		right: 16px;
+	}
+}
+
+.faq-quest.closed {
+	gap: 0;
+	.answer {
+		transition-delay: 0ms;
+		transition-duration: 0ms;
+		opacity: 0;
+		height: 0;
+	}
+}
