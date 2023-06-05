@@ -1,0 +1,26 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "firefox",
+            "firefoxExecutable": "developer" ,
+            "request": "launch",
+            "name": "Firefox against vite dev server",
+            "url": "http://localhost:4444",
+            "webRoot": "${workspaceFolder}"
+        },
+        {
+            "type": "chrome",
+            "runtimeExecutable": "/Applications/Chromium.app/Contents/MacOS/Chromium",
+            "runtimeArgs": [
+                "--new-window",
+                "--disable-background-networking",
+                "--start-fullscreen"
+            ],
+            "request": "launch",
+            "name": "Chromium",
+            "url": "http://localhost:3000",
+            "webRoot": "${workspaceFolder}",
+        }
+    ]
+}
