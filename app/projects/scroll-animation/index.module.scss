@@ -1,0 +1,29 @@
+.container {
+  display: grid;
+  grid-auto-flow: row;
+  justify-items: center;
+  height: 100dvh;
+  width: 100dvw;
+  gap: 4rem;
+  overflow: scroll;
+  position: relative;
+  .title {
+    font-family: sans-serif;
+  }
+}
+
+.content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-self: center;
+  background-color: rgb(153, 153, 153);
+  color: black;
+  width: 8rem;
+  height: 8rem;
+  translate: -100dvw 0;
+  transition: translate 250ms ease-out;
+  &.visible{
+    translate: 0 0;
+  }
+}

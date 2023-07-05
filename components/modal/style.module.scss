@@ -1,0 +1,16 @@
+.close{
+    display: none;
+    width: 0;
+}
+
+.open{
+    display: flex;
+    width: 32rem;
+    height: auto;
+    aspect-ratio: 16/9;
+    position: absolute;
+    top: 0;
+    left: 0;
+    overflow: scroll;
+    background: rgb(129, 129, 129);
+}

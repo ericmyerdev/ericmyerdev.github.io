@@ -1,0 +1,15 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+}
+
+.panelContainer {
+    display: flex;
+    flex-direction: row;
+    width: 90vw;
+    gap: 10px;
+}
+

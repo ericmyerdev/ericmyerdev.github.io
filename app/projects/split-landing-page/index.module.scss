@@ -1,0 +1,89 @@
+.container {
+  display: flex;
+  flex-direction: row;
+  // width: 100vw;
+  height: 100vh;
+  font-family: sans-serif;
+  position: relative;
+}
+
+.split {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  position: relative;
+  width: 50%;
+  transition: width 800ms ease-in-out;
+  & * {
+    white-space: nowrap;
+    color: white;
+    z-index: 1;
+  }
+  &:before {
+    content: "";
+    background-color: rgba(0, 0, 0, 0.75);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+  }
+}
+
+.title {
+  font-size: 64px;
+  margin: 64px 0;
+}
+
+.sub {
+  font-size: 16px;
+  border: 3px white solid;
+  padding: 20px 64px;
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+#meat-view {
+  background: url(assets/background/pexels-fábio-bueno-1314041.jpg) no-repeat
+    center center/cover;
+  &:before {
+    background-color: rgba(50, 4, 107, 0.75);
+  }
+  & .sub:hover {
+    background-color: rgb(196, 28, 79);
+    border-color: rgb(196, 28, 79);
+  }
+  &:hover {
+    width: 95vw;
+  }
+}
+
+#vege-view {
+  background: url(assets/background/pexels-polina-kovaleva-5644971.jpg)
+    no-repeat center center/cover;
+  &:before {
+    background-color: rgba(2, 56, 13, 0.75);
+  }
+  & .sub:hover {
+    background-color: rgb(18, 171, 49);
+    border-color: rgb(18, 171, 49);
+  }
+}
+
+.hoverLeft {
+  #meat-view {
+    width: 75%;
+  }
+  #vege-view {
+    width: 25%;
+  }
+}
+.hoverRight {
+  #meat-view {
+    width: 25%;
+  }
+  #vege-view {
+    width: 75%;
+  }
+}

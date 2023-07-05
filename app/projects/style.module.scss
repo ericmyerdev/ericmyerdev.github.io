@@ -1,0 +1,15 @@
+.link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    font-size: 1.5rem;
+}
+
+.projectContainer{
+    width: 100dvw;
+    height: 100dvh;
+}

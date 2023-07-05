@@ -1,0 +1,45 @@
+.container {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	gap: 4svw;
+	width: 100svw;
+	height: 100svh;
+	position: relative;
+	font-size: 2rem;
+}
+
+.cup {
+	border: 0.5svw solid rgb(32, 69, 235);
+	border-radius: 0 0 2svw 2svw;
+}
+
+.progressBar {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	width: 20svw;
+	height: 48svh;
+	overflow: hidden;
+}
+
+.progressSteps {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	gap: 1svw;
+	position: relative;
+}
+
+.step {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 10svh;
+	&.active {
+		background-color: rgba(32, 69, 235, 0.5);
+	}
+}

@@ -1,0 +1,48 @@
+.container {
+	display: flex;
+	width: 100svw;
+	height: 100svh;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+}
+
+.background {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100svw;
+	height: 100svh;
+	opacity: 0;
+	z-index: -1;
+	transition: opacity 500ms ease-in;
+	&.active {
+		opacity: 1;
+	}
+}
+
+.viewer {
+	display: flex;
+	width: 100%;
+	height: 100%;
+	justify-content: center;
+	align-items: center;
+	.port {
+		display: flex;
+		width: 70svw;
+		height: 70svh;
+		border: solid rgb(0, 0, 0, 0.8);
+		border-width: 15svh 15svw;
+	}
+	.button {
+		position: absolute;
+		color: white;
+		font-size: 2rem;
+		&#left {
+			left: 10svw;
+		}
+		&#right {
+			right: 10svw;
+		}
+	}
+}

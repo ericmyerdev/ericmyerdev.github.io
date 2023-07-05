@@ -1,0 +1,41 @@
+@import url("https://fonts.googleapis.com/css2?family=Oleo+Script:wght@400;700&display=swap");
+
+.container {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	width: 100svw;
+	height: 100svh;
+	gap: 2svw;
+	background-color: rgb(51, 98, 240);
+}
+
+.heading {
+	font-family: "Oleo Script";
+	font-size: 4svw;
+}
+
+#Counters {
+	display: flex;
+	flex-direction: row;
+	gap: 8svw;
+}
+
+.counterInfo {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+.YouTube .socialIcon {
+	color: red;
+}
+
+.Twitter .socialIcon {
+	color: rgba(29 161 242);
+}
+
+.TikTok .socialIcon {
+	filter: hue-rotate();
+}
