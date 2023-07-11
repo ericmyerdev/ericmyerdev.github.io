@@ -1,0 +1,9 @@
+(self.webpackChunk_N_E=self.webpackChunk_N_E||[]).push([[22],{7588:function(e,t,o){Promise.resolve().then(o.bind(o,3888))},3888:function(e,t,o){"use strict";o.r(t);var r=o(9268);o(6006);var n=o(4153),s=o.n(n);t.default=()=>{let e=e=>{document.querySelectorAll("audio").forEach(e=>{e.pause(),e.currentTime=0}),e&&document.querySelector("#".concat(e)).play()};return(0,r.jsxs)("div",{className:s().container,children:[(0,r.jsx)("div",{className:s().buttons,children:["applause","boo","gasp","tada","victory","wrong"].map((t,o)=>(0,r.jsxs)("button",{onClick:()=>e(t),children:[(0,r.jsx)("audio",{id:t,src:"/assets/sound-board/".concat(t,".mp3")},o),t.charAt(0).toUpperCase()+t.slice(1)]},o))}),(0,r.jsx)("button",{className:s().stopBtn,onClick:()=>e(),children:"Stop"})]})}},4153:function(e){e.exports={container:"sound-board_container__Mhwva",buttons:"sound-board_buttons__PTiWl",stopBtn:"sound-board_stopBtn__5XWBg"}},3177:function(e,t,o){"use strict";/**
+ * @license React
+ * react-jsx-runtime.production.min.js
+ *
+ * Copyright (c) Meta Platforms, Inc. and affiliates.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+ */var r=o(6006),n=Symbol.for("react.element"),s=Symbol.for("react.fragment"),a=Object.prototype.hasOwnProperty,c=r.__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED.ReactCurrentOwner,u={key:!0,ref:!0,__self:!0,__source:!0};function i(e,t,o){var r,s={},i=null,l=null;for(r in void 0!==o&&(i=""+o),void 0!==t.key&&(i=""+t.key),void 0!==t.ref&&(l=t.ref),t)a.call(t,r)&&!u.hasOwnProperty(r)&&(s[r]=t[r]);if(e&&e.defaultProps)for(r in t=e.defaultProps)void 0===s[r]&&(s[r]=t[r]);return{$$typeof:n,type:e,key:i,ref:l,props:s,_owner:c.current}}t.Fragment=s,t.jsx=i,t.jsxs=i},9268:function(e,t,o){"use strict";e.exports=o(3177)}},function(e){e.O(0,[253,698,560],function(){return e(e.s=7588)}),_N_E=e.O()}]);

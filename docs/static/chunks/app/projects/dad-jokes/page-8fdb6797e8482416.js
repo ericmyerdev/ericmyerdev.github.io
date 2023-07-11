@@ -1,0 +1,9 @@
+(self.webpackChunk_N_E=self.webpackChunk_N_E||[]).push([[421],{5386:function(e,n,t){Promise.resolve().then(t.bind(t,6302))},6302:function(e,n,t){"use strict";t.r(n);var o=t(9268),r=t(6006),s=t(9869),a=t.n(s);n.default=()=>{let[e,n]=(0,r.useState)("Default Joke"),t=async()=>{let e=await fetch("https://icanhazdadjoke.com",{headers:{Accept:"application/json"}}),t=await e.json();n(t.joke)};return(0,r.useEffect)(()=>{t()},[]),(0,o.jsxs)("div",{className:a().container,children:[(0,o.jsx)("div",{id:a().jokeContainer,children:e}),(0,o.jsx)("div",{id:a().jokeBtn,onClick:t,children:"New Joke"})]})}},9869:function(e){e.exports={container:"dad-jokes_container__KsbfL",jokeContainer:"dad-jokes_jokeContainer__NTU9_",jokeBtn:"dad-jokes_jokeBtn__eK8Y_"}},3177:function(e,n,t){"use strict";/**
+ * @license React
+ * react-jsx-runtime.production.min.js
+ *
+ * Copyright (c) Meta Platforms, Inc. and affiliates.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+ */var o=t(6006),r=Symbol.for("react.element"),s=Symbol.for("react.fragment"),a=Object.prototype.hasOwnProperty,i=o.__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED.ReactCurrentOwner,c={key:!0,ref:!0,__self:!0,__source:!0};function _(e,n,t){var o,s={},_=null,f=null;for(o in void 0!==t&&(_=""+t),void 0!==n.key&&(_=""+n.key),void 0!==n.ref&&(f=n.ref),n)a.call(n,o)&&!c.hasOwnProperty(o)&&(s[o]=n[o]);if(e&&e.defaultProps)for(o in n=e.defaultProps)void 0===s[o]&&(s[o]=n[o]);return{$$typeof:r,type:e,key:_,ref:f,props:s,_owner:i.current}}n.Fragment=s,n.jsx=_,n.jsxs=_},9268:function(e,n,t){"use strict";e.exports=t(3177)}},function(e){e.O(0,[253,698,560],function(){return e(e.s=5386)}),_N_E=e.O()}]);

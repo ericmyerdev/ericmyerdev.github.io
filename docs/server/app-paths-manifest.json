@@ -1,0 +1,22 @@
+{
+  "/page": "app/page.js",
+  "/projects/animated-navigation/page": "app/projects/animated-navigation/page.js",
+  "/projects/blurry-loading/page": "app/projects/blurry-loading/page.js",
+  "/projects/background-slider/page": "app/projects/background-slider/page.js",
+  "/projects/drink-water/page": "app/projects/drink-water/page.js",
+  "/projects/dad-jokes/page": "app/projects/dad-jokes/page.js",
+  "/projects/event-keycodes/page": "app/projects/event-keycodes/page.js",
+  "/projects/expanding-cards/page": "app/projects/expanding-cards/page.js",
+  "/projects/form-input-wave/page": "app/projects/form-input-wave/page.js",
+  "/projects/faq-collapse/page": "app/projects/faq-collapse/page.js",
+  "/projects/incrementing-counter/page": "app/projects/incrementing-counter/page.js",
+  "/projects/hidden-search/page": "app/projects/hidden-search/page.js",
+  "/projects/movie-app/page": "app/projects/movie-app/page.js",
+  "/projects/progress-steps/page": "app/projects/progress-steps/page.js",
+  "/projects/rotating-nav-animation/page": "app/projects/rotating-nav-animation/page.js",
+  "/projects/random-choice-picker/page": "app/projects/random-choice-picker/page.js",
+  "/projects/sound-board/page": "app/projects/sound-board/page.js",
+  "/projects/scroll-animation/page": "app/projects/scroll-animation/page.js",
+  "/projects/split-landing-page/page": "app/projects/split-landing-page/page.js",
+  "/projects/theme-clock/page": "app/projects/theme-clock/page.js"
+}
