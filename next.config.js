@@ -1,4 +1,5 @@
 module.exports = {
+    output: 'export',
     distDir: 'docs',
     webpack: (config) => {
         config.module.rules.push({
